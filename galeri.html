@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Ponpes Raden Fatah</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html" class="logo-container">
+                <img src="images/logo.png" alt="Logo Ponpes Raden Fatah" class="logo-img">
+                <div class="logo-text">
+                    <h1>PONPES RADEN FATAH</h1>
+                    <p>Mencetak Generasi Qur'ani dan Berakhlak Mulia</p>
+                </div>
+            </a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+        <label for="menu-toggle" class="menu-toggle-label"><span></span><span></span><span></span></label>
+        <div class="navigation-area">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li class="dropdown">
+                            <label for="profil-toggle" class="dropdown-toggle">Profil &#9662;</label>
+                        <div class="dropdown-content">
+                            <a href="sejarah.html">Sejarah</a>
+                            <a href="visi-misi.html">Visi & Misi</a>
+                            <a href="struktur-organisasi.html">Struktur Organisasi</a>
+                            <a href="tenaga-pendidik.html">Tenaga Pendidik</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                           <label for="program-toggle" class="dropdown-toggle">Program &#9662;</label>
+                        <div class="dropdown-content">
+                            <a href="umum.html">Umum</a>
+                            <a href="agama.html">Agama</a>
+                        </div>
+                    </li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="galeri.html" class="active">Galeri</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="pendaftaran.html" class="cta-button">Pendaftaran Online</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Galeri Kegiatan & Fasilitas</h1>
+                <p>Potret kehidupan dan sarana pendukung di Pondok Pesantren Raden Fatah.</p>
+            </div>
+        </section>
+
+        <section class="gallery-section section-padding">
+            <div class="container">
+                <div class="gallery-grid">
+                    <a href="#img1" class="gallery-item" data-category="kegiatan"><img src="images/galeri/kegiatan belajar/kelas.jpeg" alt="Kegiatan Belajar di Kelas"></a>
+                    <a href="#img2" class="gallery-item" data-category="fasilitas"><img src="images/galeri/fasilitas/lumpang.png" alt="Mushola Lumpang"></a>
+                    <a href="#img3" class="gallery-item" data-category="ekskul"><img src="images/galeri/ekskul/hadrah.jpeg" alt="Latihan Hadrah"></a>
+                    <a href="#img4" class="gallery-item" data-category="kegiatan"><img src="images/galeri/ekskul/ngaji.jpeg" alt="Diskusi Kitab"></a>
+                    <a href="#img6" class="gallery-item" data-category="fasilitas"><img src="images/galeri/fasilitas/asrama.png" alt="Asrama Santri"></a>
+                    <a href="#img7" class="gallery-item" data-category="kegiatan"><img src="images/galeri/fasilitas/komp.png" alt="Praktikum Komputer"></a>
+                    <a href="#img8" class="gallery-item" data-category="fasilitas"><img src="images/galeri/fasilitas/perpus.png" alt="Perpustakaan"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" id="img1">
+        <a href="#" class="close">&times;</a>
+        <a href="#img8" class="prev">&lsaquo;</a>
+        <img src="images/galeri/kegiatan belajar/kelas.jpeg" alt="Kegiatan Belajar di Kelas">
+        <div class="caption">Kegiatan belajar mengajar yang interaktif di dalam kelas.</div>
+        <a href="#img2" class="next">&rsaquo;</a>
+    </div>
+    <div class="lightbox" id="img2">
+        <a href="#" class="close">&times;</a>
+        <a href="#img1" class="prev">&lsaquo;</a>
+        <img src="images/galeri/fasilitas/lumpang.png" alt="Mushola Lumpang">
+        <div class="caption">Mushola utama sebagai pusat ibadah dan kegiatan keagamaan.</div>
+        <a href="#img3" class="next">&rsaquo;</a>
+    </div>
+    <div class="lightbox" id="img3">
+        <a href="#_" class="close">&times;</a>
+        <a href="#img2" class="prev">&lsaquo;</a>
+        <img src="images/galeri/ekskul/hadrah.jpeg" alt="Latihan Hadrah">
+        <div class="caption">Santri berlatih kesenian hadrah untuk acara pesantren.</div>
+        <a href="#img4" class="next">&rsaquo;</a>
+    </div>
+    <div class="lightbox" id="img4"><a href="#_" class="close">&times;</a><a href="#img3" class="prev">&lsaquo;</a><img src="images/galeri/ekskul/ngaji.jpeg"><div class="caption">Diskusi kitab bersama ustadz pembimbing.</div><a href="#img5" class="next">&rsaquo;</a></div>
+    <div class="lightbox" id="img5"><a href="#_" class="close">&times;</a><a href="#img4" class="prev">&lsaquo;</a><img src="images/galeri/fasilitas/gotong.png"><div class="caption">Gotong royong pembuatan asrama.</div><a href="#img6" class="next">&rsaquo;</a></div>
+    <div class="lightbox" id="img6"><a href="#_" class="close">&times;</a><a href="#img5" class="prev">&lsaquo;</a><img src="images/galeri/fasilitas/asrama.png"><div class="caption">Gedung asrama santri yang bersih dan nyaman.</div><a href="#img7" class="next">&rsaquo;</a></div>
+    <div class="lightbox" id="img7"><a href="#_" class="close">&times;</a><a href="#img6" class="prev">&lsaquo;</a><img src="images/galeri/fasilitas/komp.png"><div class="caption">Praktikum di laboratorium komputer.</div><a href="#img8" class="next">&rsaquo;</a></div>
+    <div class="lightbox" id="img8"><a href="#_" class="close">&times;</a><a href="#img7" class="prev">&lsaquo;</a><img src="images/galeri/fasilitas/perpus.png"><div class="caption">Koleksi buku di perpustakaan pesantren.</div><a href="#img1" class="next">&rsaquo;</a></div>
+
+    <footer class="footer">
+        </footer>
+
+</body>
+</html>
