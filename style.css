@@ -890,3 +890,90 @@ table td:first-child { font-weight: 500; }
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 98vw;
+    padding: 0 8px;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem 2vw;
+  }
+  .navigation-area {
+    gap: 0;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .header-cta {
+    margin: 16px 0 0 0;
+    text-align: center;
+  }
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    min-width: 0;
+    border-radius: 0;
+    background: #fafafa;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 4px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .alur-pendaftaran, .final-pendaftaran-grid, .footer-grid, .program-grid, .profile-links-grid, .staff-grid, .legalitas-info {
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+    gap: 16px !important;
+  }
+  .alur-step, .syarat-card, .narahubung-card, .footer-col {
+    min-width: 0;
+  }
+  .logo-img {
+    width: 44px;
+  }
+  .logo-text h1 {
+    font-size: 1.1rem;
+  }
+  .logo-text p {
+    font-size: 0.8rem;
+  }
+  .section-padding {
+    padding: 24px 0;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .logo-text h1 {
+    font-size: 1rem;
+  }
+  .logo-text p {
+    font-size: 0.7rem;
+  }
+  .cta-button {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+  .footer .container {
+    padding: 16px;
+  }
+}
