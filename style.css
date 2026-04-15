@@ -767,6 +767,147 @@ table td:first-child { font-weight: 500; }
 #back-to-top { position: fixed; bottom: 20px; right: 20px; background-color: var(--warna-utama); color: var(--warna-putih); width: 40px; height: 40px; border-radius: 50%; text-align: center; font-size: 1.5rem; line-height: 40px; text-decoration: none; z-index: 100; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s, background-color 0.3s; }
 #back-to-top:hover { background-color: var(--warna-sekunder); }
 #back-to-top.show { opacity: 1; visibility: visible; }
+/* RESPONSIVE LAYOUT UNTUK SEMUA DEVICE */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  text-decoration: none;
+}
+.logo-img {
+  width: 60px;
+  height: auto;
+  max-width: 100%;
+}
+.logo-text h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.logo-text p {
+  font-size: 1rem;
+  margin: 0;
+}
+.navigation-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-links ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.nav-links a[aria-current="page"], .nav-links a.active {
+  background: #007bff;
+  color: #fff;
+}
+.header-cta {
+  margin-left: 16px;
+}
+.cta-button {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.cta-button:hover {
+  background: #0056b3;
+}
+/* Responsive styles */
+@media (max-width: 900px) {
+  .navigation-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  .header-cta {
+    margin: 16px 0 0 0;
+  }
+  .nav-links {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 0 8px;
+  }
+  .alur-pendaftaran, .final-pendaftaran-grid, .footer-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .alur-step, .syarat-card, .narahubung-card, .footer-col {
+    min-width: 0;
+  }
+  .logo-img {
+    width: 44px;
+  }
+  .logo-text h1 {
+    font-size: 1.1rem;
+  }
+  .logo-text p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .logo-text h1 {
+    font-size: 1rem;
+  }
+  .logo-text p {
+    font-size: 0.7rem;
+  }
+  .cta-button {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+}
+.section-padding {
+  padding: 40px 0;
+}
+@media (max-width: 700px) {
+  .section-padding {
+    padding: 24px 0;
+  }
+}
+.footer-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 180px;
+}
+@media (max-width: 700px) {
+  .footer-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
 /* Container */
 .container {
   max-width: 1200px;
@@ -888,189 +1029,5 @@ table td:first-child { font-weight: 500; }
   .cta-button {
     padding: 8px 12px;
     font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    max-width: 98vw;
-    padding: 0 8px;
-  }
-}
-@media (max-width: 992px) {
-  .header {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 1rem 2vw;
-  }
-  .navigation-area {
-    gap: 0;
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-  }
-  .nav-links ul {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-  }
-  .nav-links li {
-    text-align: center;
-    margin: 10px 0;
-  }
-  .header-cta {
-    margin: 16px 0 0 0;
-    text-align: center;
-  }
-  .dropdown-content {
-    position: static;
-    box-shadow: none;
-    min-width: 0;
-    border-radius: 0;
-    background: #fafafa;
-    padding: 10px 0;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    padding: 0 4px;
-  }
-  .section-title {
-    font-size: 2rem;
-  }
-  .alur-pendaftaran, .final-pendaftaran-grid, .footer-grid, .program-grid, .profile-links-grid, .staff-grid, .legalitas-info {
-    grid-template-columns: 1fr !important;
-    flex-direction: column;
-    gap: 16px !important;
-  }
-  .alur-step, .syarat-card, .narahubung-card, .footer-col {
-    min-width: 0;
-  }
-  .logo-img {
-    width: 44px;
-  }
-  .logo-text h1 {
-    font-size: 1.1rem;
-  }
-  .logo-text p {
-    font-size: 0.8rem;
-  }
-  .section-padding {
-    padding: 24px 0;
-  }
-  .hero-title {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 500px) {
-  .logo-text h1 {
-    font-size: 1rem;
-  }
-  .logo-text p {
-    font-size: 0.7rem;
-  }
-  .cta-button {
-    padding: 8px 12px;
-    font-size: 0.95rem;
-  }
-  .footer .container {
-    padding: 16px;
-  }
-}
-
-@media (max-width: 700px) {
-  .alur-pendaftaran {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-  }
-  .final-pendaftaran-grid {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-  }
-  .syarat-card, .narahubung-card {
-    padding: 16px !important;
-    font-size: 0.97rem;
-  }
-  .large-cta {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 12px 0;
-    font-size: 1.05rem;
-  }
-  .alur-step {
-    padding: 18px 12px 18px 60px !important;
-    min-width: 0;
-  }
-  .alur-step span {
-    left: 10px;
-    top: 18px;
-    font-size: 2.2rem;
-  }
-}
-@media (max-width: 400px) {
-  .alur-step {
-    padding-left: 40px !important;
-  }
-  .alur-step span {
-    left: 4px;
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 700px) {
-  .alur-pendaftaran {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-  }
-  .final-pendaftaran-grid {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-  }
-  .syarat-card, .narahubung-card {
-    padding: 16px !important;
-    font-size: 0.97rem;
-  }
-  .large-cta {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 12px 0;
-    font-size: 1.05rem;
-  }
-  .alur-step {
-    padding: 18px 12px 18px 60px !important;
-    min-width: 0;
-  }
-  .alur-step span {
-    left: 10px;
-    top: 18px;
-    font-size: 2.2rem;
-  }
-}
-@media (max-width: 400px) {
-  .alur-step {
-    padding-left: 40px !important;
-  }
-  .alur-step span {
-    left: 4px;
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 700px) {
-  .large-cta {
-    width: 100% !important;
-    box-sizing: border-box;
-    padding: 14px 0 !important;
-    font-size: 1.1rem !important;
-    text-align: center;
-    margin: 0 auto !important;
-    display: block !important;
-  }
-  .text-center {
-    padding: 0 4px;
-  }
-}
-@media (max-width: 400px) {
-  .large-cta {
-    font-size: 1rem !important;
-    padding: 10px 0 !important;
   }
 }
