@@ -977,3 +977,42 @@ table td:first-child { font-weight: 500; }
     padding: 16px;
   }
 }
+
+@media (max-width: 700px) {
+  .alur-pendaftaran {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .final-pendaftaran-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .syarat-card, .narahubung-card {
+    padding: 16px !important;
+    font-size: 0.97rem;
+  }
+  .large-cta {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 0;
+    font-size: 1.05rem;
+  }
+  .alur-step {
+    padding: 18px 12px 18px 60px !important;
+    min-width: 0;
+  }
+  .alur-step span {
+    left: 10px;
+    top: 18px;
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .alur-step {
+    padding-left: 40px !important;
+  }
+  .alur-step span {
+    left: 4px;
+    font-size: 1.5rem;
+  }
+}
